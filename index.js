@@ -9,7 +9,7 @@ const port = process.env.PORT || 4000
 
 app.use(bodyParser.json(), cors())
 app.options('*', cors());
-console.log(process.env.API_KEY)
+console.log("Mira la Key:", process.env.API_KEY)
 app.post('/', (req, res) => {
   
   const timestamp = new Date().getTime() - 30000
